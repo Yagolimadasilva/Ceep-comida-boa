@@ -1,12 +1,12 @@
 import React from 'react';
+import { View, Text, Button,
+StyleSheet} from 'react-native'
 
-import { NavigationContainer}
-from'@react-navigation/native';
-
-import { createStackNavigator }
-from '@react-navigation/stack';
-
-import HomeScreen from
+export  default function HomeScreen({
+Navigation })
+ return (
+   
+ )
 './Secreen/Homescrren';
 
 import SecondaryScreen from
@@ -33,7 +33,7 @@ export default function App() {
 
     <Stack.Screen name="Secondary"
     component={SecondaryScreen} Optnios=
-    {{ title : 'Opções Deliciosas'}} />
+    {{ title : ' Ir para Opções Deliciosas'}} />
 
     <Stack.Screen name="Cafe" component=
     {CafeScreen} Optnios={{title:
@@ -46,7 +46,9 @@ export default function App() {
  <Stack.Screen name="Pao" component=
  {PaoScreen} Optnios={{title: 'Pao caseiro'}}/>
 
-</Stack.Navigator>
+<Stack.Navigaton/>
+<NavigationContainer>
+
 
 
 
